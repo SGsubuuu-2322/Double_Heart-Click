@@ -31,4 +31,10 @@ function createHeart(e) {
   const yInside = y - topOffset;
 
   console.log(xInside, yInside);
+  console.log(heart);
+
+  heart.style.top = `${yInside}px`;
+  heart.style.left = `${xInside}px`;
+
+  loveMe.appendChild(heart);
 }
